@@ -67,3 +67,15 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# IDE & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+
+# Assignment specific build artifacts & llama.cpp models
+bin/
+task2/llama/llama.cpp/
+task2/llama/models/
+*.gguf
+
