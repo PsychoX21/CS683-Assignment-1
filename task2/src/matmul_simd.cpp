@@ -41,7 +41,6 @@ void matmul_simd(const float* A, const float* B, float* C,
 
             for (int p = 0; p < K8; p += 8) {
                 __m256 vb = _mm256_loadu_ps(b + p);
-                // _mm_prefetch(reinterpret_cast<const char*>(b + p + 48), _MM_HINT_T0);
                 s0 = _mm256_fmadd_ps(_mm256_loadu_ps(a0 + p), vb, s0);
                 s1 = _mm256_fmadd_ps(_mm256_loadu_ps(a1 + p), vb, s1);
                 s2 = _mm256_fmadd_ps(_mm256_loadu_ps(a2 + p), vb, s2);
