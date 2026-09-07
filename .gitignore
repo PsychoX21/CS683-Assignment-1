@@ -56,6 +56,7 @@ compile_commands.json
 *.log
 *.bak
 *.swp
+*.aux
 
 # vcpkg
 vcpkg_installed/
@@ -78,3 +79,4 @@ task2/llama/llama.cpp/
 task2/llama/models/
 *.gguf
 
+*.tex

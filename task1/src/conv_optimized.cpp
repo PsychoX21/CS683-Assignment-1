@@ -6,8 +6,6 @@
 
 #include "convolution.h"
 
-#define TILE_Y 2048
-#define TILE_X 2048
 #define UNROLL_FACTOR 8
 
 void conv_optimized(const float* in, float* out, const float* ker,
